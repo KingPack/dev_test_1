@@ -1,4 +1,5 @@
 <form method="GET">
+    {% block 'conteudo' %}
     {% csrf_token %}
     <label for="input1">Primeira Fatura:</label>
     <input type="number" step="0.01" name="input1" id="input1" value="{{ input1 }}">
@@ -16,4 +17,6 @@
     <input type="text" name="input5" id="input5" value="{{ input5 }}">
     <br>
     <input type="submit" value="Submit">
+    {{ form_energy }}
+    {% endblock %}
 </form>
