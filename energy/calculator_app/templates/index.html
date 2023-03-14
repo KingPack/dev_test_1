@@ -1,0 +1,19 @@
+<form method="GET">
+    {% csrf_token %}
+    <label for="input1">Primeira Fatura:</label>
+    <input type="number" step="0.01" name="input1" id="input1" value="{{ input1 }}">
+    <br>
+    <label for="input2">Segunda Fatura:</label>
+    <input type="number" step="0.01" name="input2" id="input2" value="{{ input2 }}">
+    <br>
+    <label for="input3">Terceira Fatura:</label>
+    <input type="number" step="0.01" name="input3" id="input3" value="{{ input3 }}">
+    <br>
+    <label for="input4">Valor KW/H:</label>
+    <input type="number" step="0.01" name="input4" id="input4" value="{{ input4 }}">
+    <br>
+    <label for="input5">Tipo Setor:</label>
+    <input type="text" name="input5" id="input5" value="{{ input5 }}">
+    <br>
+    <input type="submit" value="Submit">
+</form>
