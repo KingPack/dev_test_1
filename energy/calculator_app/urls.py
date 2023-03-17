@@ -3,5 +3,5 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('calculator/', views.index)
+    path('calculator/', views.energy_calculator_view)
 ]
